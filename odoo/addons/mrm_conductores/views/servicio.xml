@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+        <record id="mrm_conductores.servicio_form" model="ir.ui.view">
+            <field name="name">mrm_conductores.servicio.form</field>
+            <field name="model">mrm_conductores.servicio</field>
+            <field name="arch" type="xml">
+                <form string="Servicio">
+                    <sheet>
+                        <group>
+                            <field name="distancia" />
+                            <field name="precio" />
+                            <field name="duracion_minutos" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="mrm_conductores.servicio_tree" model="ir.ui.view">
+            <field name="name">mrm_conductores.servicio.tree</field>
+            <field name="model">mrm_conductores.servicio</field>
+            <field name="arch" type="xml">
+                <tree string="Servicio">
+                    <field name="distancia" />
+                    <field name="precio" />
+                    <field name="duracion_minutos" />
+                </tree>
+            </field>
+        </record>
+    
+    </data>
+</odoo>

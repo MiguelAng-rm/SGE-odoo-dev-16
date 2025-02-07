@@ -1,0 +1,36 @@
+<odoo>
+    <data>
+        <record id="mrm_conductores.cliente_form" model="ir.ui.view">
+            <field name="name">mrm_conductores.cliente.form</field>
+            <field name="model">mrm_conductores.cliente</field>
+            <field name="arch" type="xml">
+                <form string="Cliente">
+                    <sheet>
+                        <group>
+                            <field name="nombre" />
+                            <field name="correo" />
+                            <field name="tarjeta_bancaria" />
+                            <field name="edad" />
+                            <field name="disponible" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="mrm_conductores.cliente_tree" model="ir.ui.view">
+            <field name="name">mrm_conductores.cliente.tree</field>
+            <field name="model">mrm_conductores.cliente</field>
+            <field name="arch" type="xml">
+                <tree string="Cliente">
+                    <field name="nombre" />
+                    <field name="correo" />
+                    <field name="tarjeta_bancaria" />
+                    <field name="edad" />
+                    <field name="disponible" />
+                </tree>
+            </field>
+        </record>
+    
+    </data>
+</odoo>

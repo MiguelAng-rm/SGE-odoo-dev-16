@@ -1,0 +1,38 @@
+<odoo>
+  <data>
+
+    <record id="mrm_conductores.coche_form" model="ir.ui.view">
+      <field name="name">mrm_conductores.coche.form</field>
+      <field name="model">mrm_conductores.coche</field>
+      <field name="arch" type="xml">
+        <form string="Coche">
+          <sheet>
+            <group>
+              <field name="matricula" />
+              <field name="marca" />
+              <field name="modelo" />
+              <field name="asientos" />
+              <field name="reparandose" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="mrm_conductores.coche_tree" model="ir.ui.view">
+      <field name="name">mrm_conductores.coche.tree</field>
+      <field name="model">mrm_conductores.coche</field>
+      <field name="arch" type="xml">
+        <tree string="Coche">
+          <field name="matricula" />
+              <field name="marca" />
+              <field name="modelo" />
+              <field name="asientos" />
+              <field name="reparandose" />
+        </tree>
+      </field>
+    </record>
+
+
+  </data>
+</odoo>
