@@ -12,3 +12,4 @@ class Coche(models.Model):
     asientos = fields.Integer('Asientos', help='Introduzca el número de asientos del coche')
     #propietario_ids = fields.One2many('comodel_name', 'inverse_field_name', string='propietario')    
     reparandose = fields.Boolean('Reparandose', help='Indica si el coche está reparándose o no')
+    imagen = fields.Image('Imagen', max_width=150, max_height=150)

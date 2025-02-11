@@ -27,7 +27,7 @@ Long description of module's purpose
         'views/coche.xml',
         'views/conductor.xml',
         'views/servicio.xml',
-        'views/templates.xml',
+        'views/menus.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

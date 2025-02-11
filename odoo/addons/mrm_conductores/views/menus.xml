@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <!-- Acciones -->
+        <record id="mrm_conductores.conductor_action" model="ir.actions.act_window">
+            <field name="name">Conductores</field>
+            <field name="res_model">mrm_conductores.conductor</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="mrm_conductores.coche_action" model="ir.actions.act_window">
+            <field name="name">Coches</field>
+            <field name="res_model">mrm_conductores.coche</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="mrm_conductores.cliente_action" model="ir.actions.act_window">
+            <field name="name">Clientes</field>
+            <field name="res_model">mrm_conductores.cliente</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="mrm_conductores.servicio_action" model="ir.actions.act_window">
+            <field name="name">Servicios</field>
+            <field name="res_model">mrm_conductores.servicio</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    <!-- Menús -->
+        <menuitem
+            id="mrm_conductores.root_menu"
+            name="Gestor viajes"
+            sequence="10"/>
+        
+        <menuitem
+            id="mrm_conductores.conductor_menu"
+            name="Conductor"
+            action="mrm_conductores.conductor_action"
+            parent="mrm_conductores.root_menu"
+            sequence="10"/>
+
+        <menuitem
+            id="mrm_conductores.coche_menu"
+            name="Coche"
+            action="mrm_conductores.coche_action"
+            parent="mrm_conductores.root_menu"
+            sequence="10"/>
+
+        <menuitem
+            id="mrm_conductores.cliente_menu"
+            name="Cliente"
+            action="mrm_conductores.cliente_action"
+            parent="mrm_conductores.root_menu"
+            sequence="10"/>
+
+        <menuitem
+            id="mrm_conductores.servicio_menu"
+            name="Servicio"
+            action="mrm_conductores.servicio_action"
+            parent="mrm_conductores.root_menu"
+            sequence="10"/>
+
+    </data>
+</odoo>

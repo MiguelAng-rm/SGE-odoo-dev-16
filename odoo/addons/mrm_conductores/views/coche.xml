@@ -13,6 +13,7 @@
               <field name="modelo" />
               <field name="asientos" />
               <field name="reparandose" />
+              <field name="imagen" />
             </group>
           </sheet>
         </form>
@@ -29,6 +30,7 @@
               <field name="modelo" />
               <field name="asientos" />
               <field name="reparandose" />
+              <field name="imagen" />
         </tree>
       </field>
     </record>

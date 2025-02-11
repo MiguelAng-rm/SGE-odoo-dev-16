@@ -1,30 +1,45 @@
 <odoo>
     <data>
-<!--
-          <record id="object0" model="mrm_conductores.mrm_conductores">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
+      <record id="mrm_conductores.cliente1" model="mrm_conductores.cliente">
+        <field name="nombre">Juan</field>
+        <field name="correo">juan@juan.com</field>
+        <field name="edad">18</field>
+      </record>
 
-          <record id="object1" model="mrm_conductores.mrm_conductores">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
+      <record id="mrm_conductores.cliente2" model="mrm_conductores.cliente">
+        <field name="nombre">Juanjo</field>
+        <field name="correo">juanjo@juanjo.com</field>
+        <field name="edad">28</field>
+      </record>
 
-          <record id="object2" model="mrm_conductores.mrm_conductores">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
+      <record id="mrm_conductores.coche1" model="mrm_conductores.coche">
+        <field name="matricula">1567</field>
+        <field name="imagen"></field>
+      </record>
 
-          <record id="object3" model="mrm_conductores.mrm_conductores">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
+      <record id="mrm_conductores.coche2" model="mrm_conductores.coche">
+        <field name="matricula">7651</field>
+      </record>
 
-          <record id="object4" model="mrm_conductores.mrm_conductores">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
+      <record id="mrm_conductores.conductor1" model="mrm_conductores.conductor">
+        <field name="dni">abecrem1</field>
+        <field name="edad">18</field>
+      </record>
+
+      <record id="mrm_conductores.conductor2" model="mrm_conductores.conductor">
+        <field name="dni">abecrem2</field>
+        <field name="edad">81</field>
+      </record>
+
+      <record id="mrm_conductores.servicio1" model="mrm_conductores.servicio">
+        <field name="distancia">2.32</field>
+        <field name="precio">34.21</field>
+      </record>
+
+      <record id="mrm_conductores.servicio2" model="mrm_conductores.servicio">
+        <field name="distancia">3.23</field>
+        <field name="precio">12.43</field>
+      </record>
+
     </data>
 </odoo>

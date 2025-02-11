@@ -23,12 +23,13 @@
             </field>
         </record>
         
-        <record id="mrm_conductores.servicio_tree" model="ir.ui.view">
-            <field name="name">mrm_conductores.servicio.tree</field>
-            <field name="model">mrm_conductores.servicio</field>
+        <record id="mrm_conductores.conductor_tree" model="ir.ui.view">
+            <field name="name">mrm_conductores.conductor.tree</field>
+            <field name="model">mrm_conductores.conductor</field>
             <field name="arch" type="xml">
                 <tree string="Conductor">
                     <field name="dni" />
+                            <field name="dni" />
                             <field name="nombre" />
                             <field name="edad" />
                             <field name="grupo" />
