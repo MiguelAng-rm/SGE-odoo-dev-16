@@ -7,9 +7,16 @@
                 <form string="Servicio">
                     <sheet>
                         <group>
+                            <field name="name" />
                             <field name="distancia" />
                             <field name="precio" />
                             <field name="duracion_minutos" />
+                            <field name="clientes_ids" >
+                                <tree string="Cliente">
+                                    <field name="name" />
+                                    <field name="edad" />
+                                </tree>
+                            </field>
                         </group>
                     </sheet>
                 </form>
@@ -21,9 +28,11 @@
             <field name="model">mrm_conductores.servicio</field>
             <field name="arch" type="xml">
                 <tree string="Servicio">
+                    <field name="name" />
                     <field name="distancia" />
                     <field name="precio" />
                     <field name="duracion_minutos" />
+                    <field name="clientes_ids" />
                 </tree>
             </field>
         </record>

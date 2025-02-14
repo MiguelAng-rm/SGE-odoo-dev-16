@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_mrm_conductores_mrm_conductores,mrm_conductores.mrm_conductores,model_mrm_conductores_mrm_conductores,base.group_user,1,1,1,1
+access_mrm_conductores_cliente_users,mrm_conductores.cliente_users,model_mrm_conductores_cliente,base.group_user,1,1,1,1
+access_mrm_conductores_coche_users,mrm_conductores.coche_users,model_mrm_conductores_coche,base.group_user,1,1,1,1
+access_mrm_conductores_conductor_users,mrm_conductores.conductor_users,model_mrm_conductores_conductor,base.group_user,1,1,1,1
+access_mrm_conductores_servicio_users,mrm_conductores.servicio_users,model_mrm_conductores_servicio,base.group_user,1,1,1,1

@@ -9,6 +9,12 @@
             <group>
               <field name="name"></field>
               <field name="description"/>
+              <field name="libro_ids">
+                <tree string="Libro">
+                  <field name="name"/>
+                  <field name="precio"/>
+                </tree>
+              </field>
             </group>
           </sheet>
         </form>

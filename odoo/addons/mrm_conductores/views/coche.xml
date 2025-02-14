@@ -8,7 +8,7 @@
         <form string="Coche">
           <sheet>
             <group>
-              <field name="matricula" />
+              <field name="name" />
               <field name="marca" />
               <field name="modelo" />
               <field name="asientos" />
@@ -25,7 +25,7 @@
       <field name="model">mrm_conductores.coche</field>
       <field name="arch" type="xml">
         <tree string="Coche">
-          <field name="matricula" />
+          <field name="name" />
               <field name="marca" />
               <field name="modelo" />
               <field name="asientos" />

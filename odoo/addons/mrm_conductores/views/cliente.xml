@@ -7,11 +7,12 @@
                 <form string="Cliente">
                     <sheet>
                         <group>
-                            <field name="nombre" />
+                            <field name="name" />
                             <field name="correo" />
                             <field name="tarjeta_bancaria" />
                             <field name="edad" />
                             <field name="disponible" />
+                            <field name="servicio_id" />
                         </group>
                     </sheet>
                 </form>
@@ -23,11 +24,12 @@
             <field name="model">mrm_conductores.cliente</field>
             <field name="arch" type="xml">
                 <tree string="Cliente">
-                    <field name="nombre" />
+                    <field name="name" />
                     <field name="correo" />
                     <field name="tarjeta_bancaria" />
                     <field name="edad" />
                     <field name="disponible" />
+                    <field name="servicio_id" />
                 </tree>
             </field>
         </record>

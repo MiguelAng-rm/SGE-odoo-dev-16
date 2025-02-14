@@ -6,7 +6,7 @@ class Coche(models.Model):
     _name = 'mrm_conductores.coche'
     _description = 'Coche'
     
-    matricula = fields.Char('Matricula', required=True, help='Introduzca la matrícula del coche')
+    name = fields.Char('Matricula', required=True, help='Introduzca la matrícula del coche')
     marca = fields.Char('Marca', help='Introduzca la marca del coche')
     modelo = fields.Char('Modelo', help='Introduzca el modelo del coche')
     asientos = fields.Integer('Asientos', help='Introduzca el número de asientos del coche')

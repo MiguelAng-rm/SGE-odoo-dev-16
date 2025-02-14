@@ -7,7 +7,7 @@ class Conductor(models.Model):
     _description = 'Conductor'
     
     dni = fields.Char('DNI', required=True, help='Introduzca el DNI del conductor')
-    nombre = fields.Char('Nombre', help='Introduzca el nombre')
+    name = fields.Char('Nombre', required=True, help='Introduzca el nombre')
     edad = fields.Integer('Edad', required=True, help='Introduzca la edad del conductor')
     grupo = fields.Selection([
         ('1', 'Grupo 1'),

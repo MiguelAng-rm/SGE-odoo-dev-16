@@ -1,44 +1,56 @@
 <odoo>
     <data>
+      <!-- Servicios -->
+      <record id="mrm_conductores.servicio1" model="mrm_conductores.servicio">
+        <field name="name">ser1234</field>
+        <field name="distancia">2.32</field>
+        <field name="precio">34.21</field>
+      </record>
+
+      <record id="mrm_conductores.servicio2" model="mrm_conductores.servicio"> 
+        <field name="name">ser4321</field>
+        <field name="distancia">3.23</field>
+        <field name="precio">12.43</field>
+      </record>
+
+      <!-- Clientes -->
       <record id="mrm_conductores.cliente1" model="mrm_conductores.cliente">
-        <field name="nombre">Juan</field>
+        <field name="name">Juan</field>
         <field name="correo">juan@juan.com</field>
         <field name="edad">18</field>
+        <field name="servicio_id" ref="mrm_conductores.servicio1"/>
       </record>
 
       <record id="mrm_conductores.cliente2" model="mrm_conductores.cliente">
-        <field name="nombre">Juanjo</field>
+        <field name="name">Juanjo</field>
         <field name="correo">juanjo@juanjo.com</field>
         <field name="edad">28</field>
+        <field name="servicio_id" ref="mrm_conductores.servicio1"/>
       </record>
 
+      
+
+      <!-- Coches -->
       <record id="mrm_conductores.coche1" model="mrm_conductores.coche">
-        <field name="matricula">1567</field>
+        <field name="name">1567</field>
         <field name="imagen"></field>
       </record>
 
       <record id="mrm_conductores.coche2" model="mrm_conductores.coche">
-        <field name="matricula">7651</field>
+        <field name="name">7651</field>
       </record>
 
+      <!-- Conductores -->
       <record id="mrm_conductores.conductor1" model="mrm_conductores.conductor">
         <field name="dni">abecrem1</field>
+        <field name="name">Manuel</field>
         <field name="edad">18</field>
       </record>
 
       <record id="mrm_conductores.conductor2" model="mrm_conductores.conductor">
         <field name="dni">abecrem2</field>
+        <field name="name">Manolo</field>
         <field name="edad">81</field>
-      </record>
-
-      <record id="mrm_conductores.servicio1" model="mrm_conductores.servicio">
-        <field name="distancia">2.32</field>
-        <field name="precio">34.21</field>
-      </record>
-
-      <record id="mrm_conductores.servicio2" model="mrm_conductores.servicio">
-        <field name="distancia">3.23</field>
-        <field name="precio">12.43</field>
       </record>
 
     </data>
