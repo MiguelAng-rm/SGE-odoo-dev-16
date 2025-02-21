@@ -4,6 +4,7 @@ from odoo import models, fields, api
 
 class Conductor(models.Model):
     _name = 'mrm_conductores.conductor'
+    _inherit = ['mail.thread','mail.activity.mixin']
     _description = 'Conductor'
     
     dni = fields.Char('DNI', required=True, help='Introduzca el DNI del conductor')

@@ -41,10 +41,12 @@
       <!-- Coches -->
       <record id="mrm_conductores.coche1" model="mrm_conductores.coche">
         <field name="name">Audi bonito</field>
+        <field name="imagen" type="base64" file="mrm_conductores/static/imgs/audi.jpeg" />
       </record>
 
       <record id="mrm_conductores.coche2" model="mrm_conductores.coche">
         <field name="name">Toyota Supra</field>
+        <field name="imagen" type="base64" file="mrm_conductores/static/imgs/supra.jpeg"/>
       </record>
 
 

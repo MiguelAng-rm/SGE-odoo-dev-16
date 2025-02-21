@@ -12,4 +12,4 @@ class Coche(models.Model):
     asientos = fields.Integer('Asientos', help='Introduzca el número de asientos del coche')
     conductores_ids = fields.Many2many('mrm_conductores.conductor', string='Conductores' ,relation="mrm_conductores_coche_conductor_rel")   
     reparandose = fields.Boolean('Reparandose', help='Indica si el coche está reparándose o no')
-    imagen = fields.Image('Imagen', max_width=150, max_height=150)
+    imagen = fields.Binary('Imagen', max_width=150, max_height=150)
