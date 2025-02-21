@@ -5,12 +5,14 @@
         <field name="name">ser1234</field>
         <field name="distancia">2.32</field>
         <field name="precio">34.21</field>
+  
       </record>
 
       <record id="mrm_conductores.servicio2" model="mrm_conductores.servicio"> 
         <field name="name">ser4321</field>
         <field name="distancia">3.23</field>
         <field name="precio">12.43</field>
+        
       </record>
 
       <!-- Clientes -->
@@ -28,29 +30,42 @@
         <field name="servicio_id" ref="mrm_conductores.servicio1"/>
       </record>
 
+      <record id="mrm_conductores.cliente3" model="mrm_conductores.cliente">
+        <field name="name">Juanito</field>
+        <field name="correo">juanito@juanito.com</field>
+        <field name="edad">38</field>
+        <field name="servicio_id" ref="mrm_conductores.servicio2"/>
+      </record>
       
 
       <!-- Coches -->
       <record id="mrm_conductores.coche1" model="mrm_conductores.coche">
-        <field name="name">1567</field>
-        <field name="imagen"></field>
+        <field name="name">Audi bonito</field>
       </record>
 
       <record id="mrm_conductores.coche2" model="mrm_conductores.coche">
-        <field name="name">7651</field>
+        <field name="name">Toyota Supra</field>
       </record>
+
 
       <!-- Conductores -->
       <record id="mrm_conductores.conductor1" model="mrm_conductores.conductor">
         <field name="dni">abecrem1</field>
         <field name="name">Manuel</field>
         <field name="edad">18</field>
+        <field name="coches_ids"  eval="[
+          Command.link(ref('mrm_conductores.coche1')),
+          Command.link(ref('mrm_conductores.coche2'))
+        ]"/> 
       </record>
 
       <record id="mrm_conductores.conductor2" model="mrm_conductores.conductor">
         <field name="dni">abecrem2</field>
         <field name="name">Manolo</field>
         <field name="edad">81</field>
+        <field name="coches_ids" eval="[
+          Command.link(ref('mrm_conductores.coche1')),
+        ]"/> 
       </record>
 
     </data>

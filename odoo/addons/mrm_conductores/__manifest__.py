@@ -28,6 +28,7 @@ Long description of module's purpose
         'views/conductor.xml',
         'views/servicio.xml',
         'views/menus.xml',
+        'demo/demo.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

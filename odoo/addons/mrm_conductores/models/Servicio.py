@@ -6,6 +6,7 @@ class Servicio(models.Model):
     _name = 'mrm_conductores.servicio'
     _description = 'Servicio'
     
+    
     name = fields.Char('Codigo del servicio', required=True, help='Muestra el código del servicio actual')
     distancia = fields.Float('Distancia',required=True, help='Indique la distancia del servicio')
     precio = fields.Float('Precio',required=True, help='Indique el coste del servicio')

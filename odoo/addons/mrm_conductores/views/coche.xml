@@ -12,6 +12,14 @@
               <field name="marca" />
               <field name="modelo" />
               <field name="asientos" />
+              <field name="conductores_ids">
+                <tree string="Conductor">
+                  <field name="dni" />
+                  <field name="name" />
+                  <field name="edad" />
+                  <field name="grupo" />
+                </tree>
+              </field>
               <field name="reparandose" />
               <field name="imagen" />
             </group>

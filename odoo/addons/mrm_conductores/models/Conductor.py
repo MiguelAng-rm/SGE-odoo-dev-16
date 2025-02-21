@@ -22,6 +22,7 @@ class Conductor(models.Model):
     valoracion = fields.Integer('Valoracion', help='Indique el puntaje que le da al conductor del 1 al 5')
     horas_trabajadas = fields.Integer('Horas_trabajadas', help='Indice el número de horas trabajadas')
     ganado_dia = fields.Float('ganado_dia', help='Indique cuanto ha ganado el conductor al final del dia')
+    coches_ids = fields.Many2many('mrm_conductores.coche', string='Coches' ,relation='mrm_conductores_coche_conductor_rel')
     
     
         

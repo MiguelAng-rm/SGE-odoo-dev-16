@@ -10,6 +10,6 @@ class Coche(models.Model):
     marca = fields.Char('Marca', help='Introduzca la marca del coche')
     modelo = fields.Char('Modelo', help='Introduzca el modelo del coche')
     asientos = fields.Integer('Asientos', help='Introduzca el número de asientos del coche')
-    #propietario_ids = fields.One2many('comodel_name', 'inverse_field_name', string='propietario')    
+    conductores_ids = fields.Many2many('mrm_conductores.conductor', string='Conductores' ,relation="mrm_conductores_coche_conductor_rel")   
     reparandose = fields.Boolean('Reparandose', help='Indica si el coche está reparándose o no')
     imagen = fields.Image('Imagen', max_width=150, max_height=150)
